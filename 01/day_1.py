@@ -1,6 +1,6 @@
-with open("input.txt", "r") as file:
+with open("input.txt", "r") as f:
     calories, elf = [], []
-    for line in file.readlines():
+    for line in f.readlines():
         if line.strip():
             elf.append(int(line))
         else:
