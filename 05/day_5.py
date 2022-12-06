@@ -3,7 +3,7 @@ import copy
 with open("input.txt", "r") as f:
     lines = f.readlines()
     num_of_stacks = len(lines[1]) // 4
-    stacks = [[] for _ in range(num_of_stacks)]
+    stacks: list[list[str]] = [[] for _ in range(num_of_stacks)]
     actions = []
     for line in lines:
         if "[" in line:
